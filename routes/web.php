@@ -19,9 +19,9 @@ return view('about', [
 
 Route::get('/projects', function () {
 $projects = [
-['title' => 'Project 1', 'description' => 'My first web project'],
-['title' => 'Project 2', 'description' => 'E-commerce website'],
-['title' => 'Project 3', 'description' => 'Mobile app design'],
+['title' => 'Gamified E-learning System for CMU Information Technology', 'description' => 'A e-learning system that is about information technology with gamification such as Badges, Levels, etc.'],
+['title' => 'Mealroute', 'description' => 'A Navigation app that will show all of the eatery and shop in Central Mindanao University '],
+['title' => 'Pick-me-up', 'description' => 'An mobile application that will allow user to book a motorela for transportation'],
 ];
 return view('projects', ['projects' => $projects]);
 })->name('projects');
@@ -34,3 +34,12 @@ return view('contact', [
 'phone' => $phone
 ]);
 })->name('contact');
+
+Route::get('/hobbies',function(){
+$hobbies = [
+['title' => 'Drawing'],
+['title' => 'Gaming'],
+['title' => 'Computers']
+];
+return view('hobbies', ['hobbies' => $hobbies]);
+})->name('hobbies');
