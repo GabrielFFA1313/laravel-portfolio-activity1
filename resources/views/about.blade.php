@@ -3,7 +3,28 @@
 @section('content')
 <h1>About Me</h1>
 <div style="margin-top: 2rem;">
-<h2 style="color: #3498db;">{{ $name }}</h2>
+<div style="margin-top: 2rem;">
+
+<div style="margin-top:2rem; position:relative;">
+
+    <h2 style="color:#3498db;">
+        {{ $name }}
+    </h2>
+
+    <img 
+        src="{{ asset('images/profile.jpg') }}" 
+        alt="Profile picture"
+        style="
+            width:200px;
+            position:absolute;
+            right:0;
+            top:-125px;
+        "
+    >
+
+</div>
+
+
 <p style="margin-top: 1rem; font-size: 1.1rem;">
 <strong>Course:</strong> {{ $course }}
 </p>

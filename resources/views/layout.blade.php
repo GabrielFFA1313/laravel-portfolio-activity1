@@ -13,7 +13,7 @@ box-sizing: border-box;
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 line-height: 1.6;
-background: #f4f4f4;
+background: #000000;
 }
 nav {
 background: #333;
@@ -69,7 +69,10 @@ margin-top: 2rem;
 @yield('content')
 </div>
 <footer>
-<p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
+<p> Facebook:
+    <a href="https://www.facebook.com/gabriel.araneta.977634" style="color: #3498db;" target="_blank">
+        https://www.facebook.com/gabriel.araneta.977634
+    </a> </p>
 
 </footer>
 </body>
